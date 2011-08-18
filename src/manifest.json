@@ -1,0 +1,15 @@
+{
+	"name": "Right Next",
+	"version": "0.1",
+	"description": "use the left-right arrow key to go next on any webpage.",
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+	"permissions": ["tabs"],
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["jquery-1.6.2.min.js", "rightnext.js"]
+		}
+	]
+}
